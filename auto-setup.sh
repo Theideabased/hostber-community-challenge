@@ -97,7 +97,7 @@ npm install
 cp .env.sample .env
 
 # Start the Vue.js development server
-npm run serve &
+# npm run serve &
 
 echo "Frontend development server started on http://localhost:8080."
 
