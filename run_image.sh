@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Build my docker image
-docker build -t your-image-name .
+docker build -t my_app:v1 .
 
 # Run my docker image
-docker run -p 80:80 your-image-name
+docker run -e FLASK_APP=main.py -e FLASK_ENV=development -p 5000:5000 your-image-name
+
